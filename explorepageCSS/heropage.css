@@ -4,8 +4,8 @@
   height: 100vh;
   object-fit: cover;
   overflow: hidden;
-  position: relative; /* Damit das Pseudo-Element im Container funktioniert */
-  animation: fadeIn 3s forwards;
+  position: relative; 
+  animation: fadeIn 2s forwards;
 }
 
 /* Bild (Hero-Image) */
