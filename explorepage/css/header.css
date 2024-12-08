@@ -1,0 +1,64 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  z-index: 20;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
+  animation: fadeIn 2s forwards;
+}
+
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+
+.navigation ul {
+  margin-left: 100px;
+  display: flex;
+  list-style: none;
+}
+
+.navigation ul li {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.navigation ul li a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  color: #ff6347;
+}
+
+
+.name span {
+  margin-right: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
