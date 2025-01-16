@@ -15,10 +15,9 @@
 }
 
 
-.logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
+.logo-image {
+  height: 80px;
+  width: 140px;
   text-decoration: none;
 }
 
@@ -47,7 +46,7 @@
 }
 
 
-.name span {
+.name{
   margin-right: 50px;
   font-size: 1.2rem;
   font-weight: bold;

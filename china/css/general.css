@@ -1,11 +1,28 @@
-*{
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  text-decoration: none;
 }
 
-body{
-  background-color: rgb(53, 49, 49);
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 50px 0;
+}
+
+p{
+  color: black;
+}
+

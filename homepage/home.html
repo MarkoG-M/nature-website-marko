@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page mit Videos</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/hero.css">
-</head>
-<body>
-  <!-- Transparent Header -->
-  <header class="header">
-    <div class="logo">
-      <!-- Hier kommt das Logo (noch nicht implementiert) -->
-      <a href="#">Logo</a>
-    </div>
-    
-    <nav class="navigation">
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="../explorepage/explore.html">Entdecken</a></li>
-        <li><a href="#">Über uns</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </nav>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+  </head>
+  <body>
 
-    <div class="name">
-      <span>ReiseAbenteuer</span>
-    </div>
-  </header>
+    <header class="header">
+      <div class="logo">
+        <img class="logo-image" src="images/logo.jpeg" alt="">
+      </div>
 
-  <div class="video-container">
-    <video class="landing-video" id="landing-video" autoplay muted playsinline preload="auto"></video>
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h1>Entdecken Sie die atemberaubendsten Orte der Erde</h1>
-    </div>
-  </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="../explorepage/explore.html">Entdecken</a></li>
+          <li><a href="../Uber Uns/uberuns.html">Über uns</a></li>
+          <li><a href="../Kontakt/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
 
-  <script src="js/homepage.js"></script>
-</body>
+      <div class="name">
+        <span>Nature Calls</span>
+      </div>
+    </header>
+
+    <div class="video-container">
+      <video
+        class="landing-video"
+        id="landing-video"
+        autoplay
+        muted
+        playsinline
+        preload="auto"
+      ></video>
+      <div class="overlay"></div>
+      <div class="hero-text">
+        <h1>Entdecken Sie die atemberaubendsten Orte der Erde</h1>
+      </div>
+    </div>
+
+    <script src="js/homepage.js"></script>
+  </body>
 </html>
