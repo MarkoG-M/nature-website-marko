@@ -1,10 +1,6 @@
-<?php
+﻿<?php
 $country = $_GET['country'] ?? 'Unbekannt';
 $today = date('Y-m-d');
-?>
-
-<?php
-$country = $_GET['country'] ?? 'Unbekannt';
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +17,7 @@ $country = $_GET['country'] ?? 'Unbekannt';
 <div class="container">
 
     <h1>
-        Flüge nach <?php echo ucfirst($country); ?>
+        Flüge nach <?php echo htmlspecialchars(ucfirst($country), ENT_QUOTES, "UTF-8"); ?>
     </h1>
 
     <form action="results.php" method="GET">
@@ -29,18 +25,18 @@ $country = $_GET['country'] ?? 'Unbekannt';
         <input
             type="hidden"
             name="country"
-            value="<?php echo $country; ?>"
+            value="<?php echo htmlspecialchars($country, ENT_QUOTES, "UTF-8"); ?>"
         >
 
         <label>Von wo möchten Sie fliegen?</label>
 
         <select name="departure" required>
             <option value="">Bitte wählen</option>
-            <option value="Frankfurt">Frankfurt</option>
-            <option value="München">München</option>
-            <option value="Berlin">Berlin</option>
-            <option value="Hamburg">Hamburg</option>
-            <option value="Köln">Köln</option>
+            <option value="FRA">Frankfurt</option>
+            <option value="MUC">München</option>
+            <option value="BER">Berlin</option>
+            <option value="HAM">Hamburg</option>
+            <option value="CGN">Köln</option>
         </select>
 
         <label for="outbound">Hinflug</label>
@@ -48,6 +44,7 @@ $country = $_GET['country'] ?? 'Unbekannt';
             type="date"
             id="outbound"
             name="outbound"
+            min="<?php echo $today; ?>"
             required
         >
 
@@ -56,6 +53,7 @@ $country = $_GET['country'] ?? 'Unbekannt';
             type="date"
             id="return"
             name="return"
+            min="<?php echo $today; ?>"
             required
         >
 

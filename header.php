@@ -1,6 +1,6 @@
-<header class="header">
+﻿<header class="header">
   <div class="logo">
-    <img class="logo-image" src="/nature/explorepage/images/logo.jpeg" alt="">
+    <img class="logo-image" src="/nature/explorepage/images/logo.jpeg" alt="Nature Calls Logo">
   </div>
 
   <nav class="navigation">
@@ -11,13 +11,13 @@
       <li><a href="/nature/Kontakt/kontakt.php">Kontakt</a></li>
 
       <?php if(isset($_SESSION["user_id"])): ?>
-        <li>👤 <?php echo $_SESSION["username"]; ?></li>
+        <li class="user-name">User: <?php echo htmlspecialchars($_SESSION["username"], ENT_QUOTES, "UTF-8"); ?></li>
+        <li><a href="/nature/flights/cart.php">Warenkorb</a></li>
         <li><a href="/nature/logout.php">Logout</a></li>
       <?php else: ?>
         <li><a href="/nature/login.php">Login</a></li>
         <li><a href="/nature/register.php">Registrieren</a></li>
       <?php endif; ?>
-
     </ul>
   </nav>
 

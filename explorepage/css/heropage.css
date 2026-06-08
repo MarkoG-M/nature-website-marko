@@ -1,7 +1,6 @@
-.landingpage-image-container {
+﻿.landingpage-image-container {
   width: 100%;
   height: 100vh;
-  object-fit: cover;
   overflow: hidden;
   position: relative; 
   animation: fadeIn 2s forwards;
@@ -9,9 +8,10 @@
 
 
 .hero-image {
-  position: relative;
+  display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 

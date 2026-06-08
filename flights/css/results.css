@@ -1,4 +1,4 @@
-body{
+﻿body{
     margin:0;
     font-family:Arial;
     background:#f5f6f8;
@@ -113,7 +113,8 @@ h1{
 }
 
 /* BUTTON */
-.flight-card button{
+.flight-card button,
+.flight-card .button{
     margin-top:auto;
     padding:12px;
     border:none;
@@ -122,10 +123,23 @@ h1{
     background:#111;
     color:white;
     cursor:pointer;
+    text-align:center;
+    text-decoration:none;
 
     transition:0.3s;
 }
 
-.flight-card button:hover{
+.flight-card button:hover,
+.flight-card .button:hover{
     background:#333;
 }
+
+.cart-form{
+    margin-top:auto;
+    display:flex;
+}
+
+.cart-form button{
+    width:100%;
+}
+
