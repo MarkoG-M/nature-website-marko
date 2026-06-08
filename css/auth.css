@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+}
+
+
+.auth-container{
+    width:380px;
+    margin:140px auto 0 auto; 
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Titel */
+.auth-container h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Inputs */
+.auth-container input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+    border:1px solid #ddd;
+    outline:none;
+    transition:0.2s;
+}
+
+.auth-container input:focus{
+    border-color:#111;
+}
+
+/* Button */
+.auth-container button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#111;
+    color:white;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.auth-container button:hover{
+    background:#333;
+    transform:scale(1.03);
+}
+
+/* Link unten */
+.auth-container a{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    color:#333;
+    text-decoration:none;
+}
+
+.auth-container a:hover{
+    text-decoration:underline;
+}
+
+/* Error */
+.error{
+    color:red;
+    text-align:center;
+    margin-top:10px;
+}
