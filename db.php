@@ -1,5 +1,5 @@
 <?php
-
+//ki generiert
 $host = "localhost";
 $dbname = "nature_calls";
 $user = "root";

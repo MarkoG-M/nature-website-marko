@@ -6,6 +6,7 @@ const FLIGHT_API_ATTEMPTS = 2;
 const FLIGHT_API_RETRY_DELAY_SECONDS = 2;
 
 function searchFlights($departureAirportCode, $arrivalAirportCode, $departureDate, $returnDate, $adults = 1, $children = 0, $infants = 0, $cabinClass = "Economy", $currency = "EUR"){
+    // KI-Teil Start: dynamische FlightAPI-URL und cURL-Anfrage.
     $parts = [
         FLIGHT_API_BASE_URL,
         rawurlencode(FLIGHT_API_KEY),
@@ -61,9 +62,11 @@ function searchFlights($departureAirportCode, $arrivalAirportCode, $departureDat
     }
 
     return $data;
+    // KI-Teil Ende
 }
 
 function searchFlightsStable($departureAirportCode, $arrivalAirportCode, $departureDate, $returnDate, $adults = 1, $children = 0, $infants = 0, $cabinClass = "Economy", $currency = "EUR"){
+    // KI-Teil Start: mehrere API-Versuche, damit die Suche moeglichst vollstaendig ist.
     $bestFlights = [];
     $lastError = null;
 
@@ -94,9 +97,11 @@ function searchFlightsStable($departureAirportCode, $arrivalAirportCode, $depart
     return [
         "error" => $lastError["error"] ?? "Keine Flüge gefunden."
     ];
+    // KI-Teil Ende
 }
 
 function normalizeFlightApiResults($data, $currency = "EUR"){
+    // KI-Teil Start: verschachtelte API-Antwort in einfache Frontend-Daten umwandeln.
     if(!isset($data["itineraries"]) || !is_array($data["itineraries"])){
         return [];
     }
@@ -151,6 +156,7 @@ function normalizeFlightApiResults($data, $currency = "EUR"){
             "bookingUrl" => normalizeBookingUrl($deepLink)
         ];
 
+        // Hier werden doppelte Verbindungen zusammengefasst, damit nicht dieselben Fluege mehrfach erscheinen.
         $uniqueKey = buildFlightUniqueKey($outboundLeg, $returnLeg, $price);
 
         if(!isset($flightsByKey[$uniqueKey]) || $flight["price"] < $flightsByKey[$uniqueKey]["price"]){
@@ -163,6 +169,7 @@ function normalizeFlightApiResults($data, $currency = "EUR"){
     usort($flights, fn($a, $b) => $a["price"] <=> $b["price"]);
 
     return array_slice($flights, 0, $maxResults);
+    
 }
 
 function buildFlightUniqueKey($outboundLeg, $returnLeg, $price){
@@ -184,6 +191,7 @@ function buildFlightUniqueKey($outboundLeg, $returnLeg, $price){
 
     return strtolower(implode("|", array_map("strval", $parts)));
 }
+// KI-Teil Ende
 
 function normalizeBookingUrl($url){
     if(!$url){
@@ -223,5 +231,3 @@ function formatPlaceName($place){
 
     return $name;
 }
-
-

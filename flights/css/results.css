@@ -1,16 +1,16 @@
-﻿body{
+body{
     margin:0;
     font-family:Arial;
     background:#f5f6f8;
 }
 
-/* TITEL */
+
 h1{
     text-align:center;
     margin:40px 0;
 }
 
-/* INFO */
+
 .info{
     width:90%;
     margin:20px auto;
@@ -20,7 +20,7 @@ h1{
     box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
-/* SORT */
+
 .sort-form{
     width:90%;
     margin:20px auto;
@@ -49,7 +49,7 @@ h1{
     cursor:pointer;
 }
 
-/* GRID */
+
 .flights-container{
     width:90%;
     margin:40px auto;
@@ -59,7 +59,7 @@ h1{
     gap:30px;
 }
 
-/* CARD */
+
 .flight-card{
     background:white;
     border-radius:22px;
@@ -78,7 +78,7 @@ h1{
     transform:translateY(-5px);
 }
 
-/* TOP */
+
 .top-row{
     display:flex;
     justify-content:space-between;
@@ -90,7 +90,7 @@ h1{
     margin:0;
 }
 
-/* PRICE */
+
 .price-badge{
     background:#111;
     color:white;
@@ -99,20 +99,20 @@ h1{
     font-size:14px;
 }
 
-/* AIRLINE */
+
 .airline{
     font-size:14px;
     color:#555;
 }
 
-/* DETAILS */
+
 .details p{
     margin:6px 0;
     color:#333;
     font-size:14px;
 }
 
-/* BUTTON */
+
 .flight-card button,
 .flight-card .button{
     margin-top:auto;

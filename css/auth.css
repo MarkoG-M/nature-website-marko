@@ -14,13 +14,13 @@ body{
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* Titel */
+
 .auth-container h1{
     text-align:center;
     margin-bottom:20px;
 }
 
-/* Inputs */
+
 .auth-container input{
     width:100%;
     padding:12px;
@@ -35,7 +35,7 @@ body{
     border-color:#111;
 }
 
-/* Button */
+
 .auth-container button{
     width:100%;
     padding:12px;
@@ -56,7 +56,7 @@ body{
     transform:scale(1.03);
 }
 
-/* Link unten */
+
 .auth-container a{
     display:block;
     text-align:center;
@@ -69,9 +69,15 @@ body{
     text-decoration:underline;
 }
 
-/* Error */
+
 .error{
     color:red;
+    text-align:center;
+    margin-top:10px;
+}
+
+.success{
+    color:green;
     text-align:center;
     margin-top:10px;
 }

@@ -11,7 +11,7 @@
       <li><a href="/nature/Kontakt/kontakt.php">Kontakt</a></li>
 
       <?php if(isset($_SESSION["user_id"])): ?>
-        <li class="user-name">User: <?php echo htmlspecialchars($_SESSION["username"], ENT_QUOTES, "UTF-8"); ?></li>
+        <li class="user-name"><a href="/nature/profile.php">User: <?php echo htmlspecialchars($_SESSION["username"], ENT_QUOTES, "UTF-8"); ?></a></li>
         <li><a href="/nature/flights/cart.php">Warenkorb</a></li>
         <li><a href="/nature/logout.php">Logout</a></li>
       <?php else: ?>

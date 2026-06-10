@@ -18,9 +18,7 @@
 
   <?php session_start(); ?>
 <?php include "../header.php"; ?>
-
-  <!-- HERO -->
-  <div class="landingpage-image-container">
+<div class="landingpage-image-container">
     <img class="hero-image" src="images/schweiz-hero.jpg" alt="">
 
     <div class="text-image">
@@ -28,12 +26,8 @@
       <p>Berge, Seen und Natur</p>
     </div>
   </div>
-
-  <!-- TITLE -->
-  <p class="uberschrift">Die schönsten Orte</p>
-
-  <!-- CARDS -->
-  <section class="grid">
+<p class="uberschrift">Die schönsten Orte</p>
+<section class="grid">
 
     <div class="card reveal">
       <div class="img-box img-large">
@@ -78,9 +72,7 @@
     </div>
 
   </section>
-
-  <!-- FACTS -->
-  <section class="facts">
+<section class="facts">
 
     <div class="fact-card reveal">
       <div class="number">01</div>
@@ -101,9 +93,7 @@
     </div>
 
   </section>
-
-  <!-- QUOTE -->
-  <section class="quote-slider reveal">
+<section class="quote-slider reveal">
 
     <button class="arrow left" onclick="changeQuote(-1)">‹</button>
 

@@ -1,4 +1,4 @@
-/* reveal animation */
+
 
 const observer = new IntersectionObserver((entries) => {
 
@@ -17,7 +17,7 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".reveal")
   .forEach((el) => observer.observe(el));
 
-/* quotes */
+
 
 const quotes = [
   "„Die Berge rufen und ich muss gehen.“",

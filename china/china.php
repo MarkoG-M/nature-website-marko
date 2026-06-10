@@ -15,13 +15,9 @@
 </head>
 
 <body>
-
-  <!-- HEADER -->
-  <?php session_start(); ?>
+<?php session_start(); ?>
   <?php include "../header.php"; ?>
-
-  <!-- HERO -->
-  <div class="landingpage-image-container">
+<div class="landingpage-image-container">
     <img class="hero-image" src="images/china-mauer-gross.jpg" alt="">
     <div class="text-image">
       <h1>China</h1>
@@ -29,12 +25,8 @@
     </div>
     <div class="overlay"></div>
   </div>
-
-  <!-- TITLE -->
-  <p class="uberschrift">Die coolsten Attraktionen</p>
-
-  <!-- MAIN CARDS -->
-  <section class="grid">
+<p class="uberschrift">Die coolsten Attraktionen</p>
+<section class="grid">
 
     <div class="card reveal">
       <div class="img-box img-large">
@@ -73,9 +65,7 @@
     </div>
 
   </section>
-
-  <!-- FACTS -->
-  <section class="facts">
+<section class="facts">
 
     <div class="fact-card reveal">
       <div class="number">01</div>
@@ -96,9 +86,7 @@
     </div>
 
   </section>
-
-  <!-- QUOTE -->
-  <section class="quote reveal">
+<section class="quote reveal">
     <h2>
       „Reisen ist nicht das Entdecken neuer Orte, sondern das Sehen mit neuen Augen.“
     </h2>

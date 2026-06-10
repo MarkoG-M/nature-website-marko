@@ -23,11 +23,9 @@ $countryAirports = [
 $departureAirports = [
     "Frankfurt" => "FRA",
     "München" => "MUC",
-    "MÃ¼nchen" => "MUC",
     "Berlin" => "BER",
     "Hamburg" => "HAM",
     "Köln" => "CGN",
-    "KÃ¶ln" => "CGN",
     "FRA" => "FRA",
     "MUC" => "MUC",
     "BER" => "BER",
@@ -42,7 +40,7 @@ $departureNames = [
     "HAM" => "Hamburg",
     "CGN" => "Köln"
 ];
-
+//ki
 $fromCode = $departureAirports[$departure] ?? strtoupper($departure);
 $toCode = $countryAirports[$country] ?? '';
 $departureLabel = $departureNames[$fromCode] ?? $departure;
@@ -57,8 +55,6 @@ if(!$toCode){
     $error = "Für dieses Land ist noch kein Zielflughafen hinterlegt.";
 } elseif(!$fromCode || !$outbound || !$return){
     $error = "Bitte fülle alle Suchfelder aus.";
-} elseif(FLIGHT_API_KEY === "DEIN_FLIGHTAPI_KEY_HIER"){
-    $error = "Bitte trage deinen FlightAPI-Key in flight_api.php ein.";
 } elseif(isset($_SESSION["flight_results_cache"][$searchKey])){
     $flights = $_SESSION["flight_results_cache"][$searchKey];
 } else {

@@ -4,6 +4,7 @@
   overflow: hidden;
   position: relative; 
   animation: fadeIn 2s forwards;
+  top: 0px;
 }
 
 
